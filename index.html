@@ -354,8 +354,72 @@
         /* Contact Section */
         .contact-content {
             text-align: center;
-            max-width: 600px;
+            max-width: 800px;
             margin: 0 auto;
+        }
+
+        .contact-form {
+            background: rgba(255, 107, 107, 0.1);
+            border: 1px solid rgba(255, 107, 107, 0.2);
+            border-radius: 15px;
+            padding: 2rem;
+            margin: 2rem 0;
+            backdrop-filter: blur(10px);
+        }
+
+        .form-group {
+            margin-bottom: 1.5rem;
+            text-align: left;
+        }
+
+        .form-group label {
+            display: block;
+            margin-bottom: 0.5rem;
+            font-weight: 500;
+            color: var(--light);
+        }
+
+        .form-group input,
+        .form-group textarea {
+            width: 100%;
+            padding: 0.75rem;
+            border: 1px solid rgba(255, 107, 107, 0.3);
+            border-radius: 8px;
+            background: rgba(26, 26, 46, 0.8);
+            color: var(--light);
+            font-family: inherit;
+            transition: all 0.3s ease;
+        }
+
+        .form-group input:focus,
+        .form-group textarea:focus {
+            outline: none;
+            border-color: var(--primary);
+            box-shadow: 0 0 0 2px rgba(255, 107, 107, 0.2);
+        }
+
+        .form-group textarea {
+            resize: vertical;
+            min-height: 120px;
+        }
+
+        .form-submit {
+            background: linear-gradient(135deg, var(--primary), var(--secondary));
+            color: white;
+            border: none;
+            padding: 0.75rem 2rem;
+            border-radius: 50px;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        .form-submit:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 10px 25px rgba(255, 107, 107, 0.3);
         }
 
         .social-links {
@@ -522,10 +586,10 @@
     </section>
 
     <!-- Projects Section -->
-    <!--<section id="projects" class="section fade-in">
+    <section id="projects" class="section fade-in">
         <h2 class="section-title">Featured Projects</h2>
         <div class="projects-grid">
-            <div class="project-card">
+        <!--    <div class="project-card">
                 <div class="project-image">
                     <i class="fas fa-code"></i>
                 </div>
@@ -584,6 +648,8 @@
         <h2 class="section-title">Let's Connect</h2>
         <div class="contact-content">
             <p>I'm always open to discussing new opportunities, interesting projects, or just having a chat about technology. Feel free to reach out!</p>
+            
+            
             <div class="social-links">
                 <a href="https://www.linkedin.com/in/sumantha-k-s-847173252/" target="_blank" class="social-link" title="LinkedIn">
                     <i class="fab fa-linkedin-in"></i>
@@ -591,10 +657,10 @@
                 <a href="https://github.com/sumanthks-01" target="_blank" class="social-link" title="GitHub">
                     <i class="fab fa-github"></i>
                 </a>
-                <a href="sumanthks2004@gmail.com" class="social-link"  class="social-link" title="Email">
+                <a href="mailto:contact@sumanthaks.dev" class="social-link" title="Email">
                     <i class="fas fa-envelope"></i>
                 </a>
-                <a href="https://www.instagram.com/sumanth_s_karaba"  class="social-link" title="Instagram">
+                <a href="https://www.instagram.com/sumanth_s_karaba" class="social-link" title="Instagram">
                     <i class="fab fa-instagram"></i>
                 </a>
             </div>
